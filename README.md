@@ -1,4 +1,4 @@
-![Next.js blogging template for Static CMS on Netlify](https://user-images.githubusercontent.com/1388138/197867836-58de8783-9712-4196-937f-4101b1327612.png)
+![Next.js blogging template for Static CMS on Vercel](https://user-images.githubusercontent.com/1388138/197867836-58de8783-9712-4196-937f-4101b1327612.png)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c6f44d34-0570-4ca0-9d3d-cabdaa2b3afb/deploy-status)](https://app.netlify.com/sites/nextjs-netlify-template/deploys)
 [![MADE BY Next.js](https://img.shields.io/badge/MADE%20BY%20Next.js-000000.svg?style=flat&logo=Next.js&labelColor=000)](https://nextjs.org/)

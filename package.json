@@ -1,15 +1,15 @@
 {
-  "name": "static-cms-next-netlify-template",
+  "name": "static-cms-next-vercel-template",
   "version": "1.0.0-beta.0",
   "license": "MIT",
   "description": "A starter for a blog powered by Next and Static CMS",
-  "repository": "https://github.com/StaticJsCMS/static-cms-next-netlify-template",
-  "bugs": "https://github.com/StaticJsCMS/static-cms-next-netlify-template/issues",
+  "repository": "https://github.com/StaticJsCMS/static-cms-next-vercel-template",
+  "bugs": "https://github.com/StaticJsCMS/static-cms-next-vercel-template/issues",
   "keywords": [
     "next",
     "static",
     "cms",
-    "netlify"
+    "vercel"
   ],
   "scripts": {
     "dev": "next dev",
@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "@staticcms/core": "2.3.3",
+    "crypto": "1.0.1",
     "date-fns": "2.29.3",
     "gray-matter": "4.0.3",
     "js-yaml": "4.1.0",
@@ -29,7 +30,9 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-schemaorg": "2.0.0",
-    "schema-dts": "1.1.2"
+    "schema-dts": "1.1.2",
+    "simple-oauth2": "5.0.0",
+    "vercel": "29.3.0"
   },
   "devDependencies": {
     "@svgr/webpack": "6.5.1",

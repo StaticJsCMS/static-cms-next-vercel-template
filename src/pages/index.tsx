@@ -9,9 +9,7 @@ import { SocialList } from "../components/SocialList";
 export default function Index() {
   return (
     <>
-      <Head>
-        <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js" async />
-      </Head>
+      <Head></Head>
       <Layout>
         <BasicMeta url={"/"} />
         <OpenGraphMeta url={"/"} />

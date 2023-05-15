@@ -27,9 +27,6 @@ yarn-error.log*
 # dist
 /dist
 
-# Local Netlify folder
-.netlify
-
 # mdx
 .mdx-data
 
