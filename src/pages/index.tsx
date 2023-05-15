@@ -9,7 +9,6 @@ import { SocialList } from "../components/SocialList";
 export default function Index() {
   return (
     <>
-      <Head></Head>
       <Layout>
         <BasicMeta url={"/"} />
         <OpenGraphMeta url={"/"} />
