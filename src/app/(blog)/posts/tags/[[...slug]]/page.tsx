@@ -6,9 +6,8 @@ import TwitterCardMeta from "@/components/meta/TwitterCardMeta";
 import config from "@/lib/config";
 import { PostContent, countPosts, listPostContent } from "@/lib/posts";
 import { TagContent, getTag, listTags } from "@/lib/tags";
-import { GetStaticPaths } from "next";
 
-type TagPostsProps = {
+interface TagPostsProps {
   posts: PostContent[];
   tag: TagContent;
   page?: string;
@@ -16,9 +15,9 @@ type TagPostsProps = {
     current: number;
     pages: number;
   };
-};
+}
 
-export const getTagPosts = async (queries: string[]): Promise<TagPostsProps> => {
+const getTagPosts = async (queries: string[]): Promise<TagPostsProps> => {
   const [slug, page] = [queries[0], queries[1]];
   const posts = listPostContent(page ? parseInt(page as string) : 1, config.posts_per_page, slug);
   const tag = getTag(slug);
@@ -40,23 +39,19 @@ export const getTagPosts = async (queries: string[]): Promise<TagPostsProps> => 
   return props;
 };
 
-export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = listTags().flatMap((tag) => {
+export const generateStaticParams = async () => {
+  return listTags().flatMap((tag) => {
     const pages = Math.ceil(countPosts(tag.slug) / config.posts_per_page);
     return Array.from(Array(pages).keys()).map((page) =>
       page === 0
         ? {
-            params: { slug: [tag.slug] },
+            slug: [tag.slug],
           }
         : {
-            params: { slug: [tag.slug, (page + 1).toString()] },
+            slug: [tag.slug, (page + 1).toString()],
           }
     );
   });
-  return {
-    paths: paths,
-    fallback: false,
-  };
 };
 
 const TagPosts = async ({ params: { slug } }: { params: { slug: string[] } }) => {

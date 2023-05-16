@@ -18,7 +18,7 @@ const BasicMeta: FC<BasicMetaProps> = ({ title, description, keywords, author, u
       <meta name="description" content={description ? description : config.site_description} />
       <meta
         name="keywords"
-        content={keywords ? keywords.join(",") : config.site_keywords.map((it) => it.keyword).join(",")}
+        content={keywords ? keywords.join(",") : config.site_keywords.join(",")}
       />
       {author ? <meta name="author" content={author} /> : null}
       <link rel="canonical" href={config.base_url + url} />

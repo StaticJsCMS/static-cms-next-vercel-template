@@ -10,7 +10,16 @@ import { listTags } from "@/lib/tags";
 import type { PostContent } from "@/lib/posts";
 import type { TagContent } from "@/lib/tags";
 
-export const getPosts = async (): Promise<PostsProps> => {
+interface PostsProps {
+  posts: PostContent[];
+  tags: TagContent[];
+  pagination: {
+    current: number;
+    pages: number;
+  };
+}
+
+const getPosts = async (): Promise<PostsProps> => {
   const posts = listPostContent(1, config.posts_per_page);
   const tags = listTags();
   const pagination = {
@@ -23,15 +32,6 @@ export const getPosts = async (): Promise<PostsProps> => {
     pagination,
   };
 };
-
-export interface PostsProps {
-  posts: PostContent[];
-  tags: TagContent[];
-  pagination: {
-    current: number;
-    pages: number;
-  };
-}
 
 const Posts = async () => {
   const { posts, tags, pagination } = await getPosts();

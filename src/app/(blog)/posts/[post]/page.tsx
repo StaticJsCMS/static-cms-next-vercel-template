@@ -4,7 +4,6 @@ import { parseISO } from "date-fns";
 import fs from "fs";
 import matter from "gray-matter";
 import yaml from "js-yaml";
-import { GetStaticPaths } from "next";
 import { serialize } from "next-mdx-remote/serialize";
 
 import type { PostContent } from "@/lib/posts";
@@ -16,7 +15,7 @@ const slugToPostContent = ((postContents) => {
   return hash;
 })(fetchPostContent());
 
-export interface PostProps {
+interface PostProps {
   title: string;
   dateString: string;
   slug: string;
@@ -26,7 +25,7 @@ export interface PostProps {
   source: MDXRemoteSerializeResult;
 }
 
-export const getPost = async (slug: string): Promise<PostProps> => {
+const getPost = async (slug: string): Promise<PostProps> => {
   const source = fs.readFileSync(slugToPostContent[slug].fullPath, "utf8");
   const { content, data } = matter(source, {
     engines: { yaml: (s) => yaml.load(s, { schema: yaml.JSON_SCHEMA }) as object },
@@ -43,12 +42,8 @@ export const getPost = async (slug: string): Promise<PostProps> => {
   };
 };
 
-export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = fetchPostContent().map((it) => "/posts/" + it.slug);
-  return {
-    paths,
-    fallback: false,
-  };
+export const generateStaticParams = async () => {
+  return fetchPostContent().map((it) => ({ post: it.slug }));
 };
 
 const Post = async ({ params }: { params: { post: string } }) => {
