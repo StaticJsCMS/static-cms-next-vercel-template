@@ -1,7 +1,13 @@
 import type { Config } from "@staticcms/core";
 
 const config: Config = {
-  backend: { name: "github", repo: "StaticJsCMS/static-cms-next-vercel-template", branch: "main" },
+  backend: {
+    name: "github",
+    repo: "StaticJsCMS/static-cms-next-vercel-template",
+    branch: "main",
+    base_url: "https://static-cms-next.vercel.app/",
+    auth_endpoint: "api/auth",
+  },
   media_folder: "public/images",
   public_folder: "/images",
   collections: [
@@ -17,9 +23,18 @@ const config: Config = {
           file: "config.json",
           description: "General site settings",
           fields: [
-            { label: "URL", name: "base_url", widget: "string", hint: "Do not enter the trailing slash of the URL" },
+            {
+              label: "URL",
+              name: "base_url",
+              widget: "string",
+              hint: "Do not enter the trailing slash of the URL",
+            },
             { label: "Site title", name: "site_title", widget: "string" },
-            { label: "Site description", name: "site_description", widget: "string" },
+            {
+              label: "Site description",
+              name: "site_description",
+              widget: "string",
+            },
             {
               label: "Site keywords",
               name: "site_keywords",
@@ -27,8 +42,16 @@ const config: Config = {
               summary: "{{fields.keyword.keyword}}",
               fields: [{ label: "Keyword", name: "keyword", widget: "string" }],
             },
-            { label: "Twitter account", name: "twitter_account", widget: "string" },
-            { label: "GitHub account", name: "github_account", widget: "string" },
+            {
+              label: "Twitter account",
+              name: "twitter_account",
+              widget: "string",
+            },
+            {
+              label: "GitHub account",
+              name: "github_account",
+              widget: "string",
+            },
           ],
         },
       ],
@@ -51,8 +74,18 @@ const config: Config = {
               label_singular: "Author",
               widget: "list",
               fields: [
-                { label: "Slug", name: "slug", widget: "string", hint: "The part of a URL identifies the author" },
-                { label: "Name", name: "name", widget: "string", hint: "First and Last" },
+                {
+                  label: "Slug",
+                  name: "slug",
+                  widget: "string",
+                  hint: "The part of a URL identifies the author",
+                },
+                {
+                  label: "Name",
+                  name: "name",
+                  widget: "string",
+                  hint: "First and Last",
+                },
                 { label: "Introduction", name: "introduction", widget: "text" },
               ],
             },
@@ -70,8 +103,18 @@ const config: Config = {
               label_singular: "Tag",
               widget: "list",
               fields: [
-                { label: "Slug", name: "slug", widget: "string", hint: "The part of a URL identifies the tag" },
-                { label: "Display Name", name: "name", widget: "string", hint: "Tag name for displaying on the site" },
+                {
+                  label: "Slug",
+                  name: "slug",
+                  widget: "string",
+                  hint: "The part of a URL identifies the tag",
+                },
+                {
+                  label: "Display Name",
+                  name: "name",
+                  widget: "string",
+                  hint: "Tag name for displaying on the site",
+                },
               ],
             },
           ],
