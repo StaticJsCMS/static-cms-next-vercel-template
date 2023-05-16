@@ -31,7 +31,7 @@
     "react-dom": "18.2.0",
     "react-schemaorg": "2.0.0",
     "schema-dts": "1.1.2",
-    "simple-oauth2": "2.5.2",
+    "simple-oauth2": "5.0.0",
     "vercel": "29.3.0"
   },
   "devDependencies": {
