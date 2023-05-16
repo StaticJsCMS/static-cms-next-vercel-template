@@ -17,18 +17,19 @@
 
 # misc
 .DS_Store
-.env*
+*.pem
 
 # debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# dist
-/dist
+# local env files
+.env*.local
 
-# mdx
-.mdx-data
+# vercel
+.vercel
 
-# ide
-.vscode
+# typescript
+*.tsbuildinfo
+next-env.d.ts

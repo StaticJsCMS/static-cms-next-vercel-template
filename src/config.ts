@@ -20,7 +20,7 @@ const config: Config = {
         {
           name: "general",
           label: "Site Config",
-          file: "config.json",
+          file: "content/config.json",
           description: "General site settings",
           fields: [
             {
@@ -65,7 +65,7 @@ const config: Config = {
         {
           name: "authors",
           label: "Authors",
-          file: "meta/authors.yml",
+          file: "content/meta/authors.yml",
           description: "Author descriptions",
           fields: [
             {
@@ -94,7 +94,7 @@ const config: Config = {
         {
           name: "tags",
           label: "Tags",
-          file: "meta/tags.yml",
+          file: "content/meta/tags.yml",
           description: "List of tags",
           fields: [
             {

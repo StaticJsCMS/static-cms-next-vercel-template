@@ -1,6 +1,6 @@
-import config from "../../config.json";
+import config from "../../content/config.json";
 
-type Config = {
+export interface Config {
   readonly base_url: string;
   readonly site_title: string;
   readonly site_description: string;
@@ -8,6 +8,6 @@ type Config = {
   readonly posts_per_page: number;
   readonly twitter_account: string;
   readonly github_account: string;
-};
+}
 
 export default config as Config;
