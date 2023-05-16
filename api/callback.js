@@ -1,8 +1,7 @@
-import { VercelRequest, VercelResponse } from "@vercel/node";
-import { create, renderBody } from "./_lib/oauth2";
+const { create, renderBody } = require("./_lib/oauth2");
 
-export default async (req: VercelRequest, res: VercelResponse) => {
-  const code = req.query.code as string;
+const handler = async (req, res) => {
+  const code = req.query.code;
   const { host } = req.headers;
 
   const oauth2 = create();
@@ -10,17 +9,19 @@ export default async (req: VercelRequest, res: VercelResponse) => {
   try {
     const accessToken = await oauth2.authorizationCode.getToken({
       code,
-      redirect_uri: `https://${host}/api/callback`
+      redirect_uri: `https://${host}/api/callback`,
     });
     const { token } = oauth2.accessToken.create(accessToken);
 
     res.status(200).send(
       renderBody("success", {
         token: token.access_token,
-        provider: "github"
+        provider: "github",
       })
     );
   } catch (e) {
     res.status(200).send(renderBody("error", e));
   }
 };
+
+module.exports = handler;
