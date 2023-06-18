@@ -3330,10 +3330,10 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-4.6.0.tgz#3c7c9c46e678feefe7a2e5bb609d3dbd665ffb3f"
   integrity sha512-t09vSN3MdfsyCHoFcTRCH/iUtG7OJ0CsjzB8cjAmKc/va/kIgeDI/TxsigdncE/4be734m0cvIYwNaV4i2XqAw==
 
-"@staticcms/core@2.3.3":
-  version "2.3.3"
-  resolved "https://registry.yarnpkg.com/@staticcms/core/-/core-2.3.3.tgz#3d7b6eefe60effe998f37deef4e29f43817f7470"
-  integrity sha512-H0S4Q6JM6+1ULyU17zQy6uAOt0B35yhyoiU71LmT+s3Z01Dq1Vu4bfrwDsAeDSTL8/MYNx58rUTFep7ojcxJmg==
+"@staticcms/core@2.5.1":
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/@staticcms/core/-/core-2.5.1.tgz#546330e85c43c820c0ed112e66505237d42a346b"
+  integrity sha512-oSfbUYwdDv4tfQ/c1xA7+KI1y0Hwx2wr8EhjsfAjBl+kDIeoQTh8KBo/VOtcW//1m0XDZh6XXK+4iVXVu38WpA==
   dependencies:
     "@babel/eslint-parser" "7.21.3"
     "@babel/runtime" "7.21.0"
