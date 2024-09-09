@@ -8,12 +8,6 @@ There are some boilerplate or tutorials for the combination of Next.js and Verce
 
 Next.js blogging template for Vercel has already implemented these standard features for building blogs with only using Next.js and Vercel stacks.
 
-## Demo
-
-Deploy on your environment by clicking here:
-
-[Next.js blog template for Vercel](https://static-cms-next-vercel-template.vercel.app/)
-
 ## Features
 
 - **Tagging**: organizes content by tags
@@ -46,10 +40,6 @@ After that, set up your project, following the Vercel documentation:
 ### Static CMS Config
 
 [config.yml](src/config.ts)
-
-## References
-
-- [Static CMS Documentation](https://staticcms.org/docs/intro/)
 
 ## License
 
