@@ -32,7 +32,7 @@
   resolved "https://registry.yarnpkg.com/@babel/compat-data/-/compat-data-7.22.3.tgz#cd502a6a0b6e37d7ad72ce7e71a7160a3ae36f7e"
   integrity sha512-aNtko9OPOwVESUFp3MZfD8Uzxl7JzSeJpd7npIoxCasU37PFbAQRpKglkaKwlHOyeJdrREpo8TW8ldrkYWwvIQ==
 
-"@babel/core@^7.18.6", "@babel/core@^7.20.7":
+"@babel/core@^7.20.7", "@babel/core@^7.21.8":
   version "7.22.1"
   resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.22.1.tgz#5de51c5206f4c6f5533562838337a603c1033cfd"
   integrity sha512-Hkqu7J4ynysSXxmAahpN1jjRwVJ+NdpraFLIWflgjpVob3KNyK3/tIUc7Q7szed8WMp0JNa7Qtd1E9Oo22F9gA==
@@ -83,22 +83,22 @@
     eslint-visitor-keys "^2.1.0"
     semver "^6.3.0"
 
-"@babel/generator@^7.18.6", "@babel/generator@^7.22.0", "@babel/generator@^7.22.3":
-  version "7.22.3"
-  resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.22.3.tgz#0ff675d2edb93d7596c5f6728b52615cfc0df01e"
-  integrity sha512-C17MW4wlk//ES/CJDL51kPNwl+qiBQyN7b9SKyVp11BLGFeSPoVaHrv+MNt8jwQFhQWowW88z1eeBx3pFz9v8A==
-  dependencies:
-    "@babel/types" "^7.22.3"
-    "@jridgewell/gen-mapping" "^0.3.2"
-    "@jridgewell/trace-mapping" "^0.3.17"
-    jsesc "^2.5.1"
-
 "@babel/generator@^7.21.5":
   version "7.21.5"
   resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.21.5.tgz#c0c0e5449504c7b7de8236d99338c3e2a340745f"
   integrity sha512-SrKK/sRv8GesIW1bDagf9cCG38IOMYZusoe1dfg0D8aiUe3Amvoj1QtjTPAWcfrZFvIwlleLb0gxzQidL9w14w==
   dependencies:
     "@babel/types" "^7.21.5"
+    "@jridgewell/gen-mapping" "^0.3.2"
+    "@jridgewell/trace-mapping" "^0.3.17"
+    jsesc "^2.5.1"
+
+"@babel/generator@^7.22.0", "@babel/generator@^7.22.3":
+  version "7.22.3"
+  resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.22.3.tgz#0ff675d2edb93d7596c5f6728b52615cfc0df01e"
+  integrity sha512-C17MW4wlk//ES/CJDL51kPNwl+qiBQyN7b9SKyVp11BLGFeSPoVaHrv+MNt8jwQFhQWowW88z1eeBx3pFz9v8A==
+  dependencies:
+    "@babel/types" "^7.22.3"
     "@jridgewell/gen-mapping" "^0.3.2"
     "@jridgewell/trace-mapping" "^0.3.17"
     jsesc "^2.5.1"
@@ -404,15 +404,15 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@babel/parser@^7.18.6", "@babel/parser@^7.21.9", "@babel/parser@^7.22.0", "@babel/parser@^7.22.4":
-  version "7.22.4"
-  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.22.4.tgz#a770e98fd785c231af9d93f6459d36770993fb32"
-  integrity sha512-VLLsx06XkEYqBtE5YGPwfSGwfrjnyPP5oiGty3S8pQLFDFLaS8VwWSIxkTXpcvr5zeYLE6+MBNl2npl/YnfofA==
-
 "@babel/parser@^7.20.7", "@babel/parser@^7.21.5", "@babel/parser@^7.21.8":
   version "7.21.8"
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.21.8.tgz#642af7d0333eab9c0ad70b14ac5e76dbde7bfdf8"
   integrity sha512-6zavDGdzG3gUqAdWvlLFfk+36RilI+Pwyuuh7HItyeScCWP3k6i8vKclAQ0bM/0y/Kz/xiwvxhMv9MgTJP5gmA==
+
+"@babel/parser@^7.21.9", "@babel/parser@^7.22.0", "@babel/parser@^7.22.4":
+  version "7.22.4"
+  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.22.4.tgz#a770e98fd785c231af9d93f6459d36770993fb32"
+  integrity sha512-VLLsx06XkEYqBtE5YGPwfSGwfrjnyPP5oiGty3S8pQLFDFLaS8VwWSIxkTXpcvr5zeYLE6+MBNl2npl/YnfofA==
 
 "@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression@^7.18.6":
   version "7.18.6"
@@ -631,7 +631,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.8.0"
 
-"@babel/plugin-syntax-jsx@^7.17.12", "@babel/plugin-syntax-jsx@^7.18.6", "@babel/plugin-syntax-jsx@^7.21.4":
+"@babel/plugin-syntax-jsx@^7.17.12", "@babel/plugin-syntax-jsx@^7.21.4":
   version "7.21.4"
   resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-jsx/-/plugin-syntax-jsx-7.21.4.tgz#f264ed7bf40ffc9ec239edabc17a50c4f5b6fea2"
   integrity sha512-5hewiLct5OKyh6PLKEYaFclcqtIgCb6bmELouxjF6up5q3Sov7rOayW4RwhbaBL0dit8rA80GNfY+UuDp2mBbQ==
@@ -694,7 +694,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.14.5"
 
-"@babel/plugin-syntax-typescript@^7.20.0":
+"@babel/plugin-syntax-typescript@^7.20.0", "@babel/plugin-syntax-typescript@^7.21.4":
   version "7.21.4"
   resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-typescript/-/plugin-syntax-typescript-7.21.4.tgz#2751948e9b7c6d771a8efa59340c15d4a2891ff8"
   integrity sha512-xz0D39NvhQn4t4RNsHmDnnsaQizIlUkdtYvLs8La1BlfjQ6JEwxkJGeqJMW2tAXx+q6H+WFuUTXNdYVpEya0YA==
@@ -1179,7 +1179,89 @@
     "@babel/helper-create-regexp-features-plugin" "^7.22.1"
     "@babel/helper-plugin-utils" "^7.21.5"
 
-"@babel/preset-env@^7.18.6":
+"@babel/preset-env@^7.20.2":
+  version "7.21.5"
+  resolved "https://registry.yarnpkg.com/@babel/preset-env/-/preset-env-7.21.5.tgz#db2089d99efd2297716f018aeead815ac3decffb"
+  integrity sha512-wH00QnTTldTbf/IefEVyChtRdw5RJvODT/Vb4Vcxq1AZvtXj6T0YeX0cAcXhI6/BdGuiP3GcNIL4OQbI2DVNxg==
+  dependencies:
+    "@babel/compat-data" "^7.21.5"
+    "@babel/helper-compilation-targets" "^7.21.5"
+    "@babel/helper-plugin-utils" "^7.21.5"
+    "@babel/helper-validator-option" "^7.21.0"
+    "@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression" "^7.18.6"
+    "@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining" "^7.20.7"
+    "@babel/plugin-proposal-async-generator-functions" "^7.20.7"
+    "@babel/plugin-proposal-class-properties" "^7.18.6"
+    "@babel/plugin-proposal-class-static-block" "^7.21.0"
+    "@babel/plugin-proposal-dynamic-import" "^7.18.6"
+    "@babel/plugin-proposal-export-namespace-from" "^7.18.9"
+    "@babel/plugin-proposal-json-strings" "^7.18.6"
+    "@babel/plugin-proposal-logical-assignment-operators" "^7.20.7"
+    "@babel/plugin-proposal-nullish-coalescing-operator" "^7.18.6"
+    "@babel/plugin-proposal-numeric-separator" "^7.18.6"
+    "@babel/plugin-proposal-object-rest-spread" "^7.20.7"
+    "@babel/plugin-proposal-optional-catch-binding" "^7.18.6"
+    "@babel/plugin-proposal-optional-chaining" "^7.21.0"
+    "@babel/plugin-proposal-private-methods" "^7.18.6"
+    "@babel/plugin-proposal-private-property-in-object" "^7.21.0"
+    "@babel/plugin-proposal-unicode-property-regex" "^7.18.6"
+    "@babel/plugin-syntax-async-generators" "^7.8.4"
+    "@babel/plugin-syntax-class-properties" "^7.12.13"
+    "@babel/plugin-syntax-class-static-block" "^7.14.5"
+    "@babel/plugin-syntax-dynamic-import" "^7.8.3"
+    "@babel/plugin-syntax-export-namespace-from" "^7.8.3"
+    "@babel/plugin-syntax-import-assertions" "^7.20.0"
+    "@babel/plugin-syntax-import-meta" "^7.10.4"
+    "@babel/plugin-syntax-json-strings" "^7.8.3"
+    "@babel/plugin-syntax-logical-assignment-operators" "^7.10.4"
+    "@babel/plugin-syntax-nullish-coalescing-operator" "^7.8.3"
+    "@babel/plugin-syntax-numeric-separator" "^7.10.4"
+    "@babel/plugin-syntax-object-rest-spread" "^7.8.3"
+    "@babel/plugin-syntax-optional-catch-binding" "^7.8.3"
+    "@babel/plugin-syntax-optional-chaining" "^7.8.3"
+    "@babel/plugin-syntax-private-property-in-object" "^7.14.5"
+    "@babel/plugin-syntax-top-level-await" "^7.14.5"
+    "@babel/plugin-transform-arrow-functions" "^7.21.5"
+    "@babel/plugin-transform-async-to-generator" "^7.20.7"
+    "@babel/plugin-transform-block-scoped-functions" "^7.18.6"
+    "@babel/plugin-transform-block-scoping" "^7.21.0"
+    "@babel/plugin-transform-classes" "^7.21.0"
+    "@babel/plugin-transform-computed-properties" "^7.21.5"
+    "@babel/plugin-transform-destructuring" "^7.21.3"
+    "@babel/plugin-transform-dotall-regex" "^7.18.6"
+    "@babel/plugin-transform-duplicate-keys" "^7.18.9"
+    "@babel/plugin-transform-exponentiation-operator" "^7.18.6"
+    "@babel/plugin-transform-for-of" "^7.21.5"
+    "@babel/plugin-transform-function-name" "^7.18.9"
+    "@babel/plugin-transform-literals" "^7.18.9"
+    "@babel/plugin-transform-member-expression-literals" "^7.18.6"
+    "@babel/plugin-transform-modules-amd" "^7.20.11"
+    "@babel/plugin-transform-modules-commonjs" "^7.21.5"
+    "@babel/plugin-transform-modules-systemjs" "^7.20.11"
+    "@babel/plugin-transform-modules-umd" "^7.18.6"
+    "@babel/plugin-transform-named-capturing-groups-regex" "^7.20.5"
+    "@babel/plugin-transform-new-target" "^7.18.6"
+    "@babel/plugin-transform-object-super" "^7.18.6"
+    "@babel/plugin-transform-parameters" "^7.21.3"
+    "@babel/plugin-transform-property-literals" "^7.18.6"
+    "@babel/plugin-transform-regenerator" "^7.21.5"
+    "@babel/plugin-transform-reserved-words" "^7.18.6"
+    "@babel/plugin-transform-shorthand-properties" "^7.18.6"
+    "@babel/plugin-transform-spread" "^7.20.7"
+    "@babel/plugin-transform-sticky-regex" "^7.18.6"
+    "@babel/plugin-transform-template-literals" "^7.18.9"
+    "@babel/plugin-transform-typeof-symbol" "^7.18.9"
+    "@babel/plugin-transform-unicode-escapes" "^7.21.5"
+    "@babel/plugin-transform-unicode-regex" "^7.18.6"
+    "@babel/preset-modules" "^0.1.5"
+    "@babel/types" "^7.21.5"
+    babel-plugin-polyfill-corejs2 "^0.3.3"
+    babel-plugin-polyfill-corejs3 "^0.6.0"
+    babel-plugin-polyfill-regenerator "^0.4.1"
+    core-js-compat "^3.25.1"
+    semver "^6.3.0"
+
+"@babel/preset-env@^7.21.5":
   version "7.22.4"
   resolved "https://registry.yarnpkg.com/@babel/preset-env/-/preset-env-7.22.4.tgz#c86a82630f0e8c61d9bb9327b7b896732028cbed"
   integrity sha512-c3lHOjbwBv0TkhYCr+XCR6wKcSZ1QbQTVdSkZUaVpLv8CVWotBMArWUi5UAJrcrQaEnleVkkvaV8F/pmc/STZQ==
@@ -1265,88 +1347,6 @@
     core-js-compat "^3.30.2"
     semver "^6.3.0"
 
-"@babel/preset-env@^7.20.2":
-  version "7.21.5"
-  resolved "https://registry.yarnpkg.com/@babel/preset-env/-/preset-env-7.21.5.tgz#db2089d99efd2297716f018aeead815ac3decffb"
-  integrity sha512-wH00QnTTldTbf/IefEVyChtRdw5RJvODT/Vb4Vcxq1AZvtXj6T0YeX0cAcXhI6/BdGuiP3GcNIL4OQbI2DVNxg==
-  dependencies:
-    "@babel/compat-data" "^7.21.5"
-    "@babel/helper-compilation-targets" "^7.21.5"
-    "@babel/helper-plugin-utils" "^7.21.5"
-    "@babel/helper-validator-option" "^7.21.0"
-    "@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression" "^7.18.6"
-    "@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining" "^7.20.7"
-    "@babel/plugin-proposal-async-generator-functions" "^7.20.7"
-    "@babel/plugin-proposal-class-properties" "^7.18.6"
-    "@babel/plugin-proposal-class-static-block" "^7.21.0"
-    "@babel/plugin-proposal-dynamic-import" "^7.18.6"
-    "@babel/plugin-proposal-export-namespace-from" "^7.18.9"
-    "@babel/plugin-proposal-json-strings" "^7.18.6"
-    "@babel/plugin-proposal-logical-assignment-operators" "^7.20.7"
-    "@babel/plugin-proposal-nullish-coalescing-operator" "^7.18.6"
-    "@babel/plugin-proposal-numeric-separator" "^7.18.6"
-    "@babel/plugin-proposal-object-rest-spread" "^7.20.7"
-    "@babel/plugin-proposal-optional-catch-binding" "^7.18.6"
-    "@babel/plugin-proposal-optional-chaining" "^7.21.0"
-    "@babel/plugin-proposal-private-methods" "^7.18.6"
-    "@babel/plugin-proposal-private-property-in-object" "^7.21.0"
-    "@babel/plugin-proposal-unicode-property-regex" "^7.18.6"
-    "@babel/plugin-syntax-async-generators" "^7.8.4"
-    "@babel/plugin-syntax-class-properties" "^7.12.13"
-    "@babel/plugin-syntax-class-static-block" "^7.14.5"
-    "@babel/plugin-syntax-dynamic-import" "^7.8.3"
-    "@babel/plugin-syntax-export-namespace-from" "^7.8.3"
-    "@babel/plugin-syntax-import-assertions" "^7.20.0"
-    "@babel/plugin-syntax-import-meta" "^7.10.4"
-    "@babel/plugin-syntax-json-strings" "^7.8.3"
-    "@babel/plugin-syntax-logical-assignment-operators" "^7.10.4"
-    "@babel/plugin-syntax-nullish-coalescing-operator" "^7.8.3"
-    "@babel/plugin-syntax-numeric-separator" "^7.10.4"
-    "@babel/plugin-syntax-object-rest-spread" "^7.8.3"
-    "@babel/plugin-syntax-optional-catch-binding" "^7.8.3"
-    "@babel/plugin-syntax-optional-chaining" "^7.8.3"
-    "@babel/plugin-syntax-private-property-in-object" "^7.14.5"
-    "@babel/plugin-syntax-top-level-await" "^7.14.5"
-    "@babel/plugin-transform-arrow-functions" "^7.21.5"
-    "@babel/plugin-transform-async-to-generator" "^7.20.7"
-    "@babel/plugin-transform-block-scoped-functions" "^7.18.6"
-    "@babel/plugin-transform-block-scoping" "^7.21.0"
-    "@babel/plugin-transform-classes" "^7.21.0"
-    "@babel/plugin-transform-computed-properties" "^7.21.5"
-    "@babel/plugin-transform-destructuring" "^7.21.3"
-    "@babel/plugin-transform-dotall-regex" "^7.18.6"
-    "@babel/plugin-transform-duplicate-keys" "^7.18.9"
-    "@babel/plugin-transform-exponentiation-operator" "^7.18.6"
-    "@babel/plugin-transform-for-of" "^7.21.5"
-    "@babel/plugin-transform-function-name" "^7.18.9"
-    "@babel/plugin-transform-literals" "^7.18.9"
-    "@babel/plugin-transform-member-expression-literals" "^7.18.6"
-    "@babel/plugin-transform-modules-amd" "^7.20.11"
-    "@babel/plugin-transform-modules-commonjs" "^7.21.5"
-    "@babel/plugin-transform-modules-systemjs" "^7.20.11"
-    "@babel/plugin-transform-modules-umd" "^7.18.6"
-    "@babel/plugin-transform-named-capturing-groups-regex" "^7.20.5"
-    "@babel/plugin-transform-new-target" "^7.18.6"
-    "@babel/plugin-transform-object-super" "^7.18.6"
-    "@babel/plugin-transform-parameters" "^7.21.3"
-    "@babel/plugin-transform-property-literals" "^7.18.6"
-    "@babel/plugin-transform-regenerator" "^7.21.5"
-    "@babel/plugin-transform-reserved-words" "^7.18.6"
-    "@babel/plugin-transform-shorthand-properties" "^7.18.6"
-    "@babel/plugin-transform-spread" "^7.20.7"
-    "@babel/plugin-transform-sticky-regex" "^7.18.6"
-    "@babel/plugin-transform-template-literals" "^7.18.9"
-    "@babel/plugin-transform-typeof-symbol" "^7.18.9"
-    "@babel/plugin-transform-unicode-escapes" "^7.21.5"
-    "@babel/plugin-transform-unicode-regex" "^7.18.6"
-    "@babel/preset-modules" "^0.1.5"
-    "@babel/types" "^7.21.5"
-    babel-plugin-polyfill-corejs2 "^0.3.3"
-    babel-plugin-polyfill-corejs3 "^0.6.0"
-    babel-plugin-polyfill-regenerator "^0.4.1"
-    core-js-compat "^3.25.1"
-    semver "^6.3.0"
-
 "@babel/preset-modules@^0.1.5":
   version "0.1.5"
   resolved "https://registry.yarnpkg.com/@babel/preset-modules/-/preset-modules-0.1.5.tgz#ef939d6e7f268827e1841638dc6ff95515e115d9"
@@ -1370,7 +1370,7 @@
     "@babel/plugin-transform-react-jsx-development" "^7.18.6"
     "@babel/plugin-transform-react-pure-annotations" "^7.18.6"
 
-"@babel/preset-typescript@^7.18.6", "@babel/preset-typescript@^7.21.0":
+"@babel/preset-typescript@^7.21.0", "@babel/preset-typescript@^7.21.5":
   version "7.21.5"
   resolved "https://registry.yarnpkg.com/@babel/preset-typescript/-/preset-typescript-7.21.5.tgz#68292c884b0e26070b4d66b202072d391358395f"
   integrity sha512-iqe3sETat5EOrORXiQ6rWfoOg2y68Cs75B9wNxdPW4kixJxh7aXQE1KPdWLDniC24T/6dSnguF33W9j/ZZQcmA==
@@ -1425,22 +1425,6 @@
     "@babel/parser" "^7.21.9"
     "@babel/types" "^7.21.5"
 
-"@babel/traverse@^7.18.6", "@babel/traverse@^7.22.1":
-  version "7.22.4"
-  resolved "https://registry.yarnpkg.com/@babel/traverse/-/traverse-7.22.4.tgz#c3cf96c5c290bd13b55e29d025274057727664c0"
-  integrity sha512-Tn1pDsjIcI+JcLKq1AVlZEr4226gpuAQTsLMorsYg9tuS/kG7nuwwJ4AB8jfQuEgb/COBwR/DqJxmoiYFu5/rQ==
-  dependencies:
-    "@babel/code-frame" "^7.21.4"
-    "@babel/generator" "^7.22.3"
-    "@babel/helper-environment-visitor" "^7.22.1"
-    "@babel/helper-function-name" "^7.21.0"
-    "@babel/helper-hoist-variables" "^7.18.6"
-    "@babel/helper-split-export-declaration" "^7.18.6"
-    "@babel/parser" "^7.22.4"
-    "@babel/types" "^7.22.4"
-    debug "^4.1.0"
-    globals "^11.1.0"
-
 "@babel/traverse@^7.20.5", "@babel/traverse@^7.21.5", "@babel/traverse@^7.4.5":
   version "7.21.5"
   resolved "https://registry.yarnpkg.com/@babel/traverse/-/traverse-7.21.5.tgz#ad22361d352a5154b498299d523cf72998a4b133"
@@ -1457,6 +1441,22 @@
     debug "^4.1.0"
     globals "^11.1.0"
 
+"@babel/traverse@^7.22.1":
+  version "7.22.4"
+  resolved "https://registry.yarnpkg.com/@babel/traverse/-/traverse-7.22.4.tgz#c3cf96c5c290bd13b55e29d025274057727664c0"
+  integrity sha512-Tn1pDsjIcI+JcLKq1AVlZEr4226gpuAQTsLMorsYg9tuS/kG7nuwwJ4AB8jfQuEgb/COBwR/DqJxmoiYFu5/rQ==
+  dependencies:
+    "@babel/code-frame" "^7.21.4"
+    "@babel/generator" "^7.22.3"
+    "@babel/helper-environment-visitor" "^7.22.1"
+    "@babel/helper-function-name" "^7.21.0"
+    "@babel/helper-hoist-variables" "^7.18.6"
+    "@babel/helper-split-export-declaration" "^7.18.6"
+    "@babel/parser" "^7.22.4"
+    "@babel/types" "^7.22.4"
+    debug "^4.1.0"
+    globals "^11.1.0"
+
 "@babel/types@^7.18.6", "@babel/types@^7.18.9", "@babel/types@^7.20.0", "@babel/types@^7.20.5", "@babel/types@^7.20.7", "@babel/types@^7.21.0", "@babel/types@^7.21.3", "@babel/types@^7.21.4", "@babel/types@^7.21.5", "@babel/types@^7.4.4":
   version "7.21.5"
   resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.21.5.tgz#18dfbd47c39d3904d5db3d3dc2cc80bedb60e5b6"
@@ -1466,7 +1466,7 @@
     "@babel/helper-validator-identifier" "^7.19.1"
     to-fast-properties "^2.0.0"
 
-"@babel/types@^7.20.2", "@babel/types@^7.22.0", "@babel/types@^7.22.3", "@babel/types@^7.22.4":
+"@babel/types@^7.22.0", "@babel/types@^7.22.3", "@babel/types@^7.22.4":
   version "7.22.4"
   resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.22.4.tgz#56a2653ae7e7591365dabf20b76295410684c071"
   integrity sha512-Tx9x3UBHTTsMSW85WB2kphxYQVvrZ/t1FxD88IpSgIjiUJlCm9z+xWIDwyo1vffTwSqteqyznB8ZE9vYYk16zA==
@@ -3228,22 +3228,22 @@
     redux-thunk "^2.4.2"
     reselect "^4.1.8"
 
-"@remix-run/dev@npm:@vercel/remix-run-dev@1.16.0-patch.1":
-  version "1.16.0-patch.1"
-  resolved "https://registry.yarnpkg.com/@vercel/remix-run-dev/-/remix-run-dev-1.16.0-patch.1.tgz#4d76928843c04c77e78c2b132df03552b75a223a"
-  integrity sha512-W4ugL5WYJEye91kRsBnH2D3Ia+4nTN9IcCH72ykOr660svw9Xise0Zi5sPtV8FP2RncAVgs2wAyAblQzsm6IqQ==
+"@remix-run/dev@npm:@vercel/remix-run-dev@1.16.1":
+  version "1.16.1"
+  resolved "https://registry.yarnpkg.com/@vercel/remix-run-dev/-/remix-run-dev-1.16.1.tgz#fb517e79cea0574b657a23231ce6c95ecd7b1d0f"
+  integrity sha512-b+gIUNqW9JwPKHSfGs0ylMk9U80dbvEmkjczNmyWvO7r1tz8O9dEmTUmbJ22/aRPPJQ/aEYosqP7UNJtDvieqw==
   dependencies:
-    "@babel/core" "^7.18.6"
-    "@babel/generator" "^7.18.6"
-    "@babel/parser" "^7.18.6"
-    "@babel/plugin-syntax-jsx" "^7.18.6"
-    "@babel/plugin-syntax-typescript" "^7.20.0"
-    "@babel/preset-env" "^7.18.6"
-    "@babel/preset-typescript" "^7.18.6"
-    "@babel/traverse" "^7.18.6"
-    "@babel/types" "^7.20.2"
+    "@babel/core" "^7.21.8"
+    "@babel/generator" "^7.21.5"
+    "@babel/parser" "^7.21.8"
+    "@babel/plugin-syntax-jsx" "^7.21.4"
+    "@babel/plugin-syntax-typescript" "^7.21.4"
+    "@babel/preset-env" "^7.21.5"
+    "@babel/preset-typescript" "^7.21.5"
+    "@babel/traverse" "^7.21.5"
+    "@babel/types" "^7.21.5"
     "@npmcli/package-json" "^2.0.0"
-    "@remix-run/server-runtime" "1.16.0"
+    "@remix-run/server-runtime" "1.16.1"
     "@vanilla-extract/integration" "^6.2.0"
     arg "^5.0.1"
     cacache "^15.0.5"
@@ -3291,17 +3291,17 @@
   resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.5.0.tgz#57618e57942a5f0131374a9fdb0167e25a117fdc"
   integrity sha512-bkUDCp8o1MvFO+qxkODcbhSqRa6P2GXgrGZVpt0dCXNW2HCSCqYI0ZoAqEOSAjRWmmlKcYgFvN4B4S+zo/f8kg==
 
-"@remix-run/router@1.6.0":
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.6.0.tgz#45010e1826f4d81a1b2cfaf874f1aac93998cd28"
-  integrity sha512-N13NRw3T2+6Xi9J//3CGLsK2OqC8NMme3d/YX+nh05K9YHWGcv8DycHJrqGScSP4T75o8IN6nqIMhVFU8ohg8w==
+"@remix-run/router@1.6.2":
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.6.2.tgz#bbe75f8c59e0b7077584920ce2cc76f8f354934d"
+  integrity sha512-LzqpSrMK/3JBAVBI9u3NWtOhWNw5AMQfrUFYB0+bDHTSw17z++WJLsPsxAuK+oSddsxk4d7F/JcdDPM1M5YAhA==
 
-"@remix-run/server-runtime@1.16.0":
-  version "1.16.0"
-  resolved "https://registry.yarnpkg.com/@remix-run/server-runtime/-/server-runtime-1.16.0.tgz#78a8b847f9f289ad2048bdba09a2f2c1c72f8179"
-  integrity sha512-a8rfS2SJ2nWhyGikXo+uknOSl1gW1/maDYuiG4Ki2wbVmF0v5mhJhlyB+1l+BjvXw+ZTS9HIiSQkg6L6JWqEcQ==
+"@remix-run/server-runtime@1.16.1":
+  version "1.16.1"
+  resolved "https://registry.yarnpkg.com/@remix-run/server-runtime/-/server-runtime-1.16.1.tgz#e3680d5709ff3c4d1f2396820a828fdf6a7a1519"
+  integrity sha512-HG+f3PGE9kzTTPe5i5Hv7UGrJLmFID1Ae4BMohP5e0xXOxbdlKDPj6NN6yGDgE7OqKFuDVliW2B5LlUdJZgUFw==
   dependencies:
-    "@remix-run/router" "1.6.0"
+    "@remix-run/router" "1.6.2"
     "@web3-storage/multipart-parser" "^1.0.0"
     cookie "^0.4.1"
     set-cookie-parser "^2.4.8"
@@ -4752,10 +4752,10 @@
   resolved "https://registry.yarnpkg.com/@vanilla-extract/private/-/private-1.0.3.tgz#7ec72bc2ff6fe51f9d650f962e8d1989b073690f"
   integrity sha512-17kVyLq3ePTKOkveHxXuIJZtGYs+cSoev7BlP+Lf4916qfDhk/HBjvlYDe8egrea7LNPHKwSZJK/bzZC+Q6AwQ==
 
-"@vercel/build-utils@6.7.2":
-  version "6.7.2"
-  resolved "https://registry.yarnpkg.com/@vercel/build-utils/-/build-utils-6.7.2.tgz#d2b7acbc552b7fb78cfd8600d1b34612a71a7099"
-  integrity sha512-STSWs66rxX5pVKkhsYNeLx/Vlxjwe+dhy6PfXgBEJua7FXbWDjXjUyjzEyk63yUWysUflEBtLW9ckS/2V0QCZw==
+"@vercel/build-utils@6.7.3":
+  version "6.7.3"
+  resolved "https://registry.yarnpkg.com/@vercel/build-utils/-/build-utils-6.7.3.tgz#136c05962d43379aa2dc773a832ce08f9d823a67"
+  integrity sha512-BCu5zX8MhzXAvd7X1Hn6b8blSTzKyY7JAEAdT5+FcB8e5fTs4bIQmYNc9JMeCqUgtisSpJvDAt69OLYP/aqEKw==
 
 "@vercel/error-utils@1.0.8":
   version "1.0.8"
@@ -4770,14 +4770,14 @@
     "@babel/runtime" "7.12.1"
     web-vitals "0.2.4"
 
-"@vercel/gatsby-plugin-vercel-builder@1.3.3":
-  version "1.3.3"
-  resolved "https://registry.yarnpkg.com/@vercel/gatsby-plugin-vercel-builder/-/gatsby-plugin-vercel-builder-1.3.3.tgz#84418faf17d468d873f99b9ca13b7e43ec572605"
-  integrity sha512-sjf+U2aHVl34mHvv9CFdIhO+Xs3pJNHYgxaJjyv+pihcOFi4B5uddE0xYM+o7fYwyBKgISVj69FvLcYuAe4Lsw==
+"@vercel/gatsby-plugin-vercel-builder@1.3.5":
+  version "1.3.5"
+  resolved "https://registry.yarnpkg.com/@vercel/gatsby-plugin-vercel-builder/-/gatsby-plugin-vercel-builder-1.3.5.tgz#6702a17248de05e86d42820660ea8880479b2946"
+  integrity sha512-pZgLNDJTc7qxgzoMkalqFstWo0JVAd4i8MupajRbMQV+Ve5TZcUv3pGn3HcjrjQVZ3fjN5KWnJOiHdXTUCHHAQ==
   dependencies:
     "@sinclair/typebox" "0.25.24"
-    "@vercel/build-utils" "6.7.2"
-    "@vercel/node" "2.14.2"
+    "@vercel/build-utils" "6.7.3"
+    "@vercel/node" "2.14.3"
     "@vercel/routing-utils" "2.2.1"
     esbuild "0.14.47"
     etag "1.8.1"
@@ -4793,10 +4793,10 @@
   resolved "https://registry.yarnpkg.com/@vercel/hydrogen/-/hydrogen-0.0.64.tgz#94bf921e393dad723bb824e9e5301d1c37c74f35"
   integrity sha512-1rzFB664G6Yzp7j4ezW9hvVjqnaU2BhyUdhchbsxtRuxkMpGgPBZKhjzRQHFvlmkz37XLC658T5Nb1P91b4sBw==
 
-"@vercel/next@3.8.2":
-  version "3.8.2"
-  resolved "https://registry.yarnpkg.com/@vercel/next/-/next-3.8.2.tgz#34e840f80ac1f43f68d7b3c8f058ff6b3e061739"
-  integrity sha512-tTcfAC+C+3la1g2UJW0cm9lGEU1Mq5O0x73MLQPKWpoHOHqZYjbKBCUm5nAFKnaMSvWS1kFm9b0v1iKQk28mGA==
+"@vercel/next@3.8.5":
+  version "3.8.5"
+  resolved "https://registry.yarnpkg.com/@vercel/next/-/next-3.8.5.tgz#75748deddbfe558ae75282b8a5e4a2c12969edf0"
+  integrity sha512-ywD5cDytlCgcTdVTajamU1vpWJZbpDteC0sCxfCGFdlIdaMi3Nh8cv3G1SNWuXd7GbHsSFeQ6S4iVJxWVy84Yg==
 
 "@vercel/nft@0.22.5":
   version "0.22.5"
@@ -4815,15 +4815,15 @@
     node-gyp-build "^4.2.2"
     resolve-from "^5.0.0"
 
-"@vercel/node@2.14.2":
-  version "2.14.2"
-  resolved "https://registry.yarnpkg.com/@vercel/node/-/node-2.14.2.tgz#9f6abb88fbd770102781c814e6fac2271aafe9f2"
-  integrity sha512-BPuMVO5ocTic6rgFyFfDbhdRwBLOfnJ0OYTtfiPF+cY1MNuG86ADWtA+6b3vPhxHC3uumcWfrhwLd9OTSYNfKw==
+"@vercel/node@2.14.3":
+  version "2.14.3"
+  resolved "https://registry.yarnpkg.com/@vercel/node/-/node-2.14.3.tgz#57df48035fdea0cd41e6c9278960524e3bdcc781"
+  integrity sha512-XEoMTQvqQC11hItfDsTegtBA66jTFXA7PTyI2QHASpoAQFMGcx91XI/sTPvxgK/1u+eXjxpiv6OU3l4/i27G4Q==
   dependencies:
     "@edge-runtime/vm" "2.0.0"
     "@types/node" "14.18.33"
     "@types/node-fetch" "2.6.3"
-    "@vercel/build-utils" "6.7.2"
+    "@vercel/build-utils" "6.7.3"
     "@vercel/error-utils" "1.0.8"
     "@vercel/static-config" "2.0.17"
     async-listen "3.0.0"
@@ -4851,13 +4851,13 @@
     "@vercel/routing-utils" "2.2.1"
     semver "6.1.1"
 
-"@vercel/remix-builder@1.8.8":
-  version "1.8.8"
-  resolved "https://registry.yarnpkg.com/@vercel/remix-builder/-/remix-builder-1.8.8.tgz#d61e82aa6338ff0d0729eb6d94f8f57d7ba6cee6"
-  integrity sha512-pXZ19gYVdrlLuxRlhrC5v1uYn53YdSLXSzbDlYgbWanE2dbMSRLIjhzq+GIow9TislkhZwJYEgaScho9dMQPDQ==
+"@vercel/remix-builder@1.8.10":
+  version "1.8.10"
+  resolved "https://registry.yarnpkg.com/@vercel/remix-builder/-/remix-builder-1.8.10.tgz#5108fa0f3fa78fb418050d521f277a3bb67a64b0"
+  integrity sha512-DXOjz/4HUawFojrbK9AQq1sjA2YxGbG8/bTTwSdqdYJZv0QgeK1vkOioxLmQP5qzZ7DQNK+LgSn9oMrX3Bq/lA==
   dependencies:
-    "@remix-run/dev" "npm:@vercel/remix-run-dev@1.16.0-patch.1"
-    "@vercel/build-utils" "6.7.2"
+    "@remix-run/dev" "npm:@vercel/remix-run-dev@1.16.1"
+    "@vercel/build-utils" "6.7.3"
     "@vercel/nft" "0.22.5"
     "@vercel/static-config" "2.0.17"
     path-to-regexp "6.2.1"
@@ -4878,13 +4878,13 @@
   resolved "https://registry.yarnpkg.com/@vercel/ruby/-/ruby-1.3.76.tgz#9c41dda3a688a2c4498a12a70e99f2dddf826b42"
   integrity sha512-J8I0B7wAn8piGoPhBroBfJWgMEJTMEL/2o8MCoCyWdaE7MRtpXhI10pj8IvcUvAECoGJ+SM1Pm+SvBqtbtZ5FQ==
 
-"@vercel/static-build@1.3.30":
-  version "1.3.30"
-  resolved "https://registry.yarnpkg.com/@vercel/static-build/-/static-build-1.3.30.tgz#35f1382d889a0c4cb5ac27bdd96048389417d8e0"
-  integrity sha512-rjwZBX07v/SRIavECVO92+W++eWCIweEx4YnhSTqY4i0J9d+aggsH4+cIrXmvIoMvxTlF3aFPpyUgX4DJaCWXA==
+"@vercel/static-build@1.3.32":
+  version "1.3.32"
+  resolved "https://registry.yarnpkg.com/@vercel/static-build/-/static-build-1.3.32.tgz#794fb66d3b641a3a837e3cbaed271950e4bee6ce"
+  integrity sha512-pFZ9dG/Ixm72o8ZGc5G78zUsgHUm5t9V6Ob/RI6KtDz+LP3iIXt7Mh0SLd4hWb553i2vgywe5T1KMPyuy3tOvw==
   dependencies:
     "@vercel/gatsby-plugin-vercel-analytics" "1.0.10"
-    "@vercel/gatsby-plugin-vercel-builder" "1.3.3"
+    "@vercel/gatsby-plugin-vercel-builder" "1.3.5"
 
 "@vercel/static-config@2.0.17":
   version "2.0.17"
@@ -12489,21 +12489,21 @@ vary@~1.1.2:
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==
 
-vercel@29.3.0:
-  version "29.3.0"
-  resolved "https://registry.yarnpkg.com/vercel/-/vercel-29.3.0.tgz#5a232ee6eba94d9b39b5d65114ecbb18f0852023"
-  integrity sha512-6YKCh+okPVcAOqNq9V3mK1j8kdVgNm4F7PTweVrtupEAX1F1V0cntcbtGbLAdGaONTA6PHxmeik9LnplInSW0Q==
+vercel@29.4.0:
+  version "29.4.0"
+  resolved "https://registry.yarnpkg.com/vercel/-/vercel-29.4.0.tgz#7cff12e2a63713c61b15baa89cde8db55e3d817d"
+  integrity sha512-sVfg87dhF3q6Nhrr5zv2oaOU1zQQd+MlsjhdNkB9MfrQyXqluAdHKiNz0+g/+wJeh/y7sUhWk2/XJb5CDlF70w==
   dependencies:
-    "@vercel/build-utils" "6.7.2"
+    "@vercel/build-utils" "6.7.3"
     "@vercel/go" "2.5.1"
     "@vercel/hydrogen" "0.0.64"
-    "@vercel/next" "3.8.2"
-    "@vercel/node" "2.14.2"
+    "@vercel/next" "3.8.5"
+    "@vercel/node" "2.14.3"
     "@vercel/python" "3.1.60"
     "@vercel/redwood" "1.1.15"
-    "@vercel/remix-builder" "1.8.8"
+    "@vercel/remix-builder" "1.8.10"
     "@vercel/ruby" "1.3.76"
-    "@vercel/static-build" "1.3.30"
+    "@vercel/static-build" "1.3.32"
 
 vfile-location@^4.0.0:
   version "4.1.0"
